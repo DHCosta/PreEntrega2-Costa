@@ -1,0 +1,511 @@
+/* reset */
+*{
+	margin: 0;
+	padding: 0;
+    background-color: #EEEEEE;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-family: 'Barlow', 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+html{
+	font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+a{ text-decoration: none; }
+
+
+/*--------- index.html ---------*/
+
+.bloque_superior{
+    display: block;
+    border-top: solid 4px black;
+    border-bottom: solid 10px black;
+    height: 15vh;
+    /*background-color:cornflowerblue;*/
+    position: relative;
+}
+
+.bs_izq{
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    /*background-color: blue;*/
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.bs_cen{
+    display: inline-block;
+    border-left: solid 3px black;
+    border-right: solid 3px black;
+    width: 10%;
+    height: 100%;
+    /*background-color: chartreuse;*/
+
+    position: absolute;
+    top: 0%;
+    left: 40%;
+}
+
+.bs_der{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    /*background-color: blueviolet;*/
+
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+
+nav{
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    /*background-color: aqua;*/
+    position: relative;
+}
+ul {
+    list-style: none;
+    font-size: 0;
+    position: absolute;
+    top: 42%;
+    right: 18%;
+}
+li {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black;
+    padding: 0 15px;
+ }
+ li a:hover{
+    color: #C46241;
+ }
+
+ .btn_contact{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #C46241;
+    width: 29.7%;
+    height: 100%;
+    position: relative;
+ }
+
+ .btn_contact a{
+    font-weight: 400;
+    color: #EEEEEE;
+    text-transform: uppercase;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    font-size: 2.1em;
+    background: none;
+ }
+ .btn_contact a:hover{
+    font-weight: 500;
+ }
+
+.bloque_central{
+    display: block;
+    border-bottom: solid 10px black;
+    height: 85vh;
+    /*background-color:yellow;*/
+
+    position: relative;
+}
+.bc_izq{
+    display: inline-block;
+    width: 35%;
+    height: 100%;
+    border-right: solid 10px black;
+    /*background-color: blue;*/
+}
+
+.bc_der{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 64%;
+    height: 100%;
+
+    position: relative;
+}
+
+.bci_int_izq{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 87.5%;
+    height: 100%;
+    border-right: solid 6px black;
+}
+
+.bci_int_der{
+    display: inline-block;
+    text-align: center;
+    width: 12%;
+    height: 100%;
+
+    position: relative;
+}
+.bci_int_der div{
+    position: absolute;
+    bottom: 5%;
+}
+.bci_int_der img{
+    margin: 10px 0;
+}
+
+.bcii_sup{
+    display: block;
+    border-bottom: solid 3px black;
+    height: 60%;
+    background-color: #377581;
+}
+
+.bcd_int_der{
+    display: inline-block;
+    border-left: solid 3px black;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 22.9%;
+    text-align: right;
+    padding-left: 50px;
+    padding-top: 90px;
+}
+.home_tit{
+    line-height: 1em;
+    font-size: 7.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+sup{
+    font-size: 0.3em;
+    font-weight: 600;
+    vertical-align: text-top;
+}
+.p_home_tit{
+    margin: 70px 0 90px 0;
+}
+.home_com{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    padding-top: 20px;
+}
+.bcd_int_der div a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #C46241;
+}
+.bcd_int_der div a:hover{
+    font-weight: 700;
+}
+
+
+/*--------- about.html ---------*/
+
+.bs_izq_ac{
+    display: inline-block;
+    border-right: solid 6px black;
+    width: 8%;
+    height: 100%;
+    background-color: #377581;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.bs_cen_ac{
+    display: inline-block;
+    border-right: solid 6px black;
+    width: 20%;
+    height: 100%;
+
+    position: absolute;
+    top: 0%;
+    left: 8%;
+}
+
+.bc_izq_ac{
+    display: inline-block;
+    border-left: solid 3px black;
+    width: 35%;
+    height: 100%;
+
+    position: absolute;
+    top: 0%;
+    left: 3%;
+}
+
+.bc_foto_about{
+    display: block;
+    border-bottom: solid 3px black;
+    width: 100%;
+    height: 90%; 
+    background-color: black;
+}
+
+.bc_foto_about img{
+    width:auto;
+    height:100%;
+}
+
+.bc_der_ac{
+    display: inline-block;
+    border-left: solid 10px black;
+    width: 75%;
+    height: 100%;
+
+    position: absolute;
+    top: 0%;
+    left: 34.3%;
+}
+
+.bcd_int_cen{
+    display: block;
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+    width: 100%;
+    height: 78.9%;
+    margin-top: 5%;
+}
+
+.bcd_int_inf{
+    display: block;
+    border-left: solid 3px black;
+    border-right: solid 3px black;
+    width: 40%;
+    height: 10%;
+    background-color: #C46241;
+
+    position: absolute;
+    top: 90%;
+    left: 4%;
+}
+
+
+/*--------- contact.html ---------*/
+
+.bci_sup_c {
+    display: block;
+    margin-top: 40%;
+}
+.bci_sup_c h1{
+    font-size: 12em;
+    font-weight: 900;
+    padding: 0 13%;
+}
+.bci_inf_c{
+    display: block;
+    border-top: solid 3px black;
+}
+
+.bcd_contenedor{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bcd_sup{
+    display: block;
+    border-bottom: solid 3px black;
+    border-right: solid 3px black;
+    width: 80%;
+    height: 12%;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.bcd_cen{
+    display: block;
+    width: 80%;
+    height: 74.3%;
+    border-right: solid 3px black;
+    background-color: #C46241;
+
+    position: absolute;
+    top: 12%;
+    left: 0%;
+}
+
+.bcd_inf{
+    display: block;
+    border-top: solid 3px black;
+    width: 100%;
+    height: 14.1%;
+    
+    position: absolute;
+    top: 85.9%;
+    left: 0%;
+}
+
+.b_social{
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    border-right: solid 3px black;
+
+    position: relative;
+}
+
+.b_social a{
+    position: absolute;
+    top: 32%;
+    left: 33%;
+}
+
+.formulario, 
+.formulario label, 
+.formulario input, 
+.formulario textarea{
+    background: none;
+}
+
+
+/*--------- gallery.html ---------*/
+
+.bs_cen_w{
+    display: inline-block;
+    border-right: solid 3px black;
+    width: 13.2%;
+    height: 100%;
+
+    position: absolute;
+    top: 0%;
+    left: 28%;
+}
+
+.bc_lista_trabajos{
+    display: block;
+    border-bottom: solid 3px black;
+    width: 100%;
+    height: 90%;
+}
+
+.bc_der_w{
+    display: inline-block;
+    border-left: solid 10px black;
+    width: 75%;
+    height: 100%;
+
+    position: absolute;
+    top: 0%;
+    left: 34.3%;
+}
+
+.bcd_int_sizq{
+    display: inline-block;
+    border-bottom: solid 3px black;
+    width: 100%;
+    height: 15%;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.bcd_int_sder{
+    display: inline-block;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    width: 100%;
+    height: 15%;
+
+    position: absolute;
+    top: 0%;
+    left: 8%;
+}
+
+.bcd_int_cizq{
+    display: inline-block;
+    border-right: solid 3px black;
+    width: 8.3%;
+    height: 85%;
+
+    position: absolute;
+    top: 15%;
+    left: 0%;
+}
+
+.bcd_int_ccen{
+    display: inline-block;
+    border-right: solid 3px black;
+    width: 65%;
+    height: 85%;
+
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.bcd_int_iizq{
+    display: inline-block;
+    border-top: solid 3px black;
+    width: 8%;
+    height: 10.7%;
+    background-color: #C46241;
+    position: absolute;
+    top: 89.3%;
+    left: 0%;
+}
+
+.bcd_int_icen{
+    display: inline-block;
+    border-top: solid 3px black;
+    width: 71.4%;
+    height: 10.7%;
+
+    position: absolute;
+    top: 89.3%;
+    left: 8.3%;
+}
+
+.bcd_int_ider{
+    display: inline-block;
+    border-top: solid 3px black;
+    width: 7.5%;
+    height: 10.7%;
+
+    position: absolute;
+    top: 89.3%;
+    left: 80%;
+}
+
+.tabla{
+    padding: 100px 60px;
+}
+
+.trabajo{
+    font-weight: 300;
+    font-size: 2em;
+    margin: 10px 0px;
+}
+
+.detalle_trabajo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #C46241;
+}
+
+/*--------- work.html ---------*/
+
