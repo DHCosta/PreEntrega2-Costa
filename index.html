@@ -22,6 +22,9 @@
 
     <!-- CDN Bootstrap--> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Animate --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header class="container-fluid">
@@ -29,15 +32,12 @@
             <div class="col-6 col-md-5 col-lg-4 col-xl-5 bs_izq">
                 <!--colocar imagen del logo-->
             </div>
-            <div class="col-md-1 d-md-inline-block d-none bs_cen"></div>
-            
+            <div class="col-md-1 d-md-inline-block d-none bs_cen"></div>  
             <nav class="col-6 col-md-6 col-lg-5 col-xl-4 d-md-inline-flex">
-
                 <input id="menu-toggle" type="checkbox" />
                 <label class='menu-button-container' for="menu-toggle">
                   <div class='menu-button'></div>
                 </label>
-
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pages/about.html">About me</a></li>
@@ -45,55 +45,49 @@
                     <li><a href="pages/contact.html">Contacto</a></li>
                 </ul> 
             </nav>
-            <div class="col-lg-2 d-lg-inline-flex d-none bt_contacto">
-                <a href="pages/contact.html">Let's talk</a>
-            </div>
+            <a class="col-lg-2 d-lg-inline-flex d-none bt_contacto" href="pages/contact.html">Let's talk</a>
         </div>
     </header>
 
-    <main class="bloque_central">
-        <section class="bc_izq">
-            <div class="bci_int_izq">
-                <div class="bcii_sup"></div>
-            </div>
-            <div class="bci_int_der">
-                <div>
+    <main class="container-fluid">
+        <div class="row bloque_central">
+                <div class="col-md-3 d-md-inline-block d-none d-flex flex-column p-0">
+                    <div class="bc_sup"></div>
+                    <div class="flex-fill"></div>
+                </div>
+                <div class="col-sm-1 d-sm-inline-flex d-none d-flex flex-column justify-content-end align-items-center bc_social">
                     <a title="Linkdin" href="https://ar.linkedin.com" target="_blank">
                         <img src="./media/lin30.png"
                             alt="logo linkdin"
-                            width="30"
-                            height="30">
+                            width="32"
+                            height="32">
                     </a>
                     <a title="Linkdin" href="https://github.com" target="_blank">
                         <img src="./media/gith32.png"
                             alt="logo linkdin"
-                            width="29"
-                            height="29">
+                            width="30"
+                            height="30">
                     </a>
                     <a title="Linkdin" href="https://www.behance.net" target="_blank">
                         <img src="./media/be30.png"
                             alt="logo linkdin"
-                            width="30"
-                            height="30">
+                            width="32"
+                            height="32">
                     </a>
                 </div>
-            </div>
-        </section>
-        <section class="bc_der">
-            <div class="bcd_int_der">
-                <div class="home_tit">
-                    <p> Digital Designer</p>
-                    <p> <sup>Front</sup>Developer</p>
-                </div>
-                <div class="p_home_tit">
-                    <p class="home_com"> Comentario 1 </p>
-                    <p class="home_com"> Comentario 2 </p>
-                </div>
-                <div>
-                    <a href="./pages/about.html">More about me</a>
-                </div>
-            </div>            
-        </section>
+                <div class="col-lg-2 bc_client d-lg-inline-block d-none"></div>
+                <div class="col-12 col-sm-11 col-md-8 col-lg-6 d-flex flex-column align-items-end bc_ppal">
+                    <div class="home_tit">
+                        <p class="fadeIn2s">Digital Designer</p>
+                        <p class="fadeIn3s"><span class="fadeIn4s">Front</span>Developer</p>
+                    </div>
+                    <div>
+                        <p class="home_com pb-3">Comentario 1</p>
+                        <p class="home_com">Comentario 2</p>
+                    </div>
+                    <a class="link_about" href="./pages/about.html">More about me</a>
+                </div>            
+
     </main>
     
     <!-- CDN Bootstrap--> 
