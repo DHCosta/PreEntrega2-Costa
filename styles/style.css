@@ -41,10 +41,6 @@ a{ text-decoration: none; }
     /*background-color:cornflowerblue;*/
 }
 
-.bs_izq{
-
-}
-
 .bs_cen{
     border-left: solid 3px black;
     border-right: solid 3px black;  
@@ -167,58 +163,6 @@ nav ul li a:focus::after{
     margin-top: 0px;
     transform: rotate(-405deg);
   }
-  
-  @media (max-width: 991px) {
-    .bs_cen{
-        background-color: #C46241;
-    }
-    nav{
-        justify-content: flex-end;
-        padding-right: 6.5rem !important;
-        
-    }
-    .menu-button-container {
-        display: flex;
-    }
-    nav ul {
-        z-index: 2;
-        position: absolute;
-        top: 10rem;
-        margin-top: 0px;
-        left: 0;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    #menu-toggle ~ ul li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      background: none;
-    }
-    #menu-toggle:checked ~ ul li {
-      height: 5rem;
-      padding: 0.5em;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      background: none;
-    }
-    ul li {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0.5em 0;
-      width: 100%;
-      color: white;
-      background-color: #d6d6d6;
-    }
-    nav ul li a::after {
-        display: none;
-    }
-  }
 
 /* fin navbar burger*/
 
@@ -271,7 +215,6 @@ nav ul li a:focus::after{
 .home_com{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.7rem;
     font-size: 1.7rem;
     text-align: end;
 }
@@ -553,3 +496,66 @@ nav ul li a:focus::after{
 /*--------- work.html ---------*/
   
   
+
+/*--------- media query ---------*/
+@media (max-width: 991px) {
+    .bs_cen{
+        background-color: #C46241;
+    }
+    nav{
+        justify-content: flex-end;
+        padding-right: 6.5rem !important;
+        
+    }
+    .menu-button-container {
+        display: flex;
+    }
+    nav ul {
+        z-index: 2;
+        position: absolute;
+        top: 10rem;
+        margin-top: 0px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #menu-toggle ~ ul li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      background: none;
+    }
+    #menu-toggle:checked ~ ul li {
+      height: 5rem;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      background: none;
+    }
+    ul li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #d6d6d6;
+    }
+    nav ul li a::after {
+        display: none;
+    }
+
+    .home_tit{
+        font-size: 5.5rem;
+    }
+    .home_com{
+        font-size: 1.5rem;
+    }
+    .link_about{
+        font-size: 1.2rem;
+    }
+  }
