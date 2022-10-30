@@ -265,7 +265,6 @@ nav ul li a:focus::after{
 .bc_about_sup{
     min-height: calc(100vh - 10rem);
     border-bottom: solid 10px black;
-    background-color: aqua;
 }
 
 .b_titulo_ab{
@@ -276,226 +275,106 @@ nav ul li a:focus::after{
 .b_cent_ab{
     border-top: solid 3px black;
     border-bottom: solid 3px black;
-    min-height: 75%;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
+    overflow-y:auto;
+}
+
+.rect_inf{
+    min-height: 8%;
 }
 
 .rect_n{
     background-color: #C46241;
     border-left: solid 3px black;
     border-right: solid 4px black;
-    width: 100%;
 }
 
 /*--------- contact.html ---------*/
 
-.bci_sup_c {
-    display: block;
-    margin-top: 40%;
+.b_border{
+    border-right: solid 10px black;
 }
-.bci_sup_c h1{
-    font-size: 12em;
+
+.b_titulo_ct{
+    font-size: 14em;
     font-weight: 900;
-    padding: 0 13%;
-}
-.bci_inf_c{
-    display: block;
-    border-top: solid 3px black;
+    line-height: 16rem;
+    text-transform: uppercase;
 }
 
-.bcd_contenedor{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.bcd_sup{
-    display: block;
-    border-bottom: solid 3px black;
-    border-right: solid 3px black;
-    width: 80%;
-    height: 12%;
-
-    position: absolute;
-    top: 0%;
-    left: 0%;
-}
-
-.bcd_cen{
-    display: block;
-    width: 80%;
-    height: 74.3%;
-    border-right: solid 3px black;
-    background-color: #C46241;
-
-    position: absolute;
-    top: 12%;
-    left: 0%;
-}
-
-.bcd_inf{
-    display: block;
-    border-top: solid 3px black;
-    width: 100%;
-    height: 14.1%;
-    
-    position: absolute;
-    top: 85.9%;
-    left: 0%;
+.b_sub_titulo_ct{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .b_social{
-    display: inline-block;
-    width: 10%;
-    height: 100%;
+    padding: 30px;
     border-right: solid 3px black;
-
-    position: relative;
 }
 
-.b_social a{
-    position: absolute;
-    top: 32%;
-    left: 33%;
+.b_cent_ac{
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    background-color: #C46241;
 }
 
-.formulario, 
-.formulario label, 
-.formulario input, 
-.formulario textarea{
+.formulario,
+.formulario label{
     background: none;
 }
 
+/*--------- gallery.html / works---------*/
 
-/*--------- gallery.html ---------*/
+.menu_works{
+    border-right: solid 10px black;
 
-.bs_cen_w{
-    display: inline-block;
-    border-right: solid 3px black;
-    width: 13.2%;
-    height: 100%;
-
-    position: absolute;
-    top: 0%;
-    left: 28%;
 }
 
-.bc_lista_trabajos{
-    display: block;
-    border-bottom: solid 3px black;
-    width: 100%;
-    height: 90%;
+.cont_over{
+    overflow-y: auto;
+    max-height: calc(100vh - 10rem - 10px);
 }
 
-.bc_der_w{
-    display: inline-block;
-    border-left: solid 10px black;
-    width: 75%;
-    height: 100%;
-
-    position: absolute;
-    top: 0%;
-    left: 34.3%;
-}
-
-.bcd_int_sizq{
-    display: inline-block;
-    border-bottom: solid 3px black;
-    width: 100%;
-    height: 15%;
-
-    position: absolute;
-    top: 0%;
-    left: 0%;
-}
-
-.bcd_int_sder{
-    display: inline-block;
-    border-left: solid 3px black;
-    border-bottom: solid 3px black;
-    width: 100%;
-    height: 15%;
-
-    position: absolute;
-    top: 0%;
-    left: 8%;
-}
-
-.bcd_int_cizq{
-    display: inline-block;
-    border-right: solid 3px black;
-    width: 8.3%;
-    height: 85%;
-
-    position: absolute;
-    top: 15%;
-    left: 0%;
-}
-
-.bcd_int_ccen{
-    display: inline-block;
-    border-right: solid 3px black;
-    width: 65%;
-    height: 85%;
-
-    position: absolute;
-    top: 15%;
-    left: 15%;
-}
-
-.bcd_int_iizq{
-    display: inline-block;
-    border-top: solid 3px black;
-    width: 8%;
-    height: 10.7%;
-    background-color: #C46241;
-    position: absolute;
-    top: 89.3%;
-    left: 0%;
-}
-
-.bcd_int_icen{
-    display: inline-block;
-    border-top: solid 3px black;
-    width: 71.4%;
-    height: 10.7%;
-
-    position: absolute;
-    top: 89.3%;
-    left: 8.3%;
-}
-
-.bcd_int_ider{
-    display: inline-block;
-    border-top: solid 3px black;
-    width: 7.5%;
-    height: 10.7%;
-
-    position: absolute;
-    top: 89.3%;
-    left: 80%;
-}
-
-.tabla{
-    padding: 100px 60px;
-}
-
-.trabajo{
-    font-weight: 300;
-    font-size: 2em;
+.work{
+    font-weight: 200;
+    font-size: 3rem;
     margin: 10px 0px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    text-align: end;
+}
+.work:hover{
+    font-weight: 400;
+    color: black;
 }
 
-.detalle_trabajo{
-    font-family: 'Montserrat', sans-serif;
+.work_sel{
+    font-weight: 400;
+    color: #377581;
+}
+.work_sel:hover{
+    font-weight: 400;
+    color: #377581;
+}
+
+.b_titulo_w{
+    font-size: 6rem;
     font-weight: 600;
-    font-size: 1.4em;
-    color: #C46241;
+    text-transform: uppercase;
 }
 
-/*--------- work.html ---------*/
-  
-  
+.det_w{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
+}
+
+
 
 /*--------- media query ---------*/
 @media (max-width: 991px) {

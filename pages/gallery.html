@@ -19,63 +19,68 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+        <!-- CDN Bootstrap--> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+        <!-- Animate --> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 <body>
-    <header>
-        <div class="bloque_superior">
-            <div class="bs_izq_ac">
-                <!--colocar logo-->
+    <header class="container-fluid">
+        <div class="row bloque_superior">
+            <div class="col-1 d-md-inline-block bs_verde"></div>  
+            <div class="col-5 col-md-5 col-lg-4 col-xl-5 bs_izq">
             </div>
-            <div class="bs_cen_ac">
-                WORKS
-            </div>
-            <div class="bs_cen_w"></div>            
-            <div class="bs_der">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="about.html">About me</a></li>
-                        <li><a href="gallery.html">Works</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                    </ul> 
-                </nav>
-                <div class="btn_contact">
-                    <a href="contact.html">Let's talk</a>
-                </div>
-            </div>
+            <nav class="col-6 col-md-6 col-lg-5 col-xl-4 d-md-inline-flex">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container p-0' for="menu-toggle">
+                  <div class='menu-button'></div>
+                </label>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About me</a></li>
+                    <li><a href="./gallery.html">Works</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                </ul> 
+            </nav>
+            <a class="col-lg-2 d-lg-inline-flex d-none bt_contacto" href="./contact.html">Let's talk</a>
         </div>
     </header>
     
-    <main class="bloque_central">
-        <section class="bc_izq_ac">
-            <div class="bc_lista_trabajos">
-                <table class="tabla">
-                    <tr>
-                        <td><a class="trabajo" href="gallery.html">Trabajo 1</a></td>
-                    </tr>
-                    <tr>
-                        <td><a class="trabajo" href="work2.html">Trabajo 2</a></td>
-                    </tr>
-                    <tr>
-                        <td><a class="trabajo" href="work3.html">Trabajo 3</a></td>
-                    </tr>
-                </table>
+    <main class="container-fluid">
+        <div class="row bc_about_sup">
+            <div class="col-12 col-md-4 d-inline-flex flex-column justify-content-center align-items-center menu_works pe-5">
+                <a class="w-100 work work_sel" href="gallery.html">Noes.arte</a>
+                <a class="w-100 work" href="work2.html">ivanzim</a>
+                <a class="w-100 work" href="work3.html">ivanbenja</a>
+                <a class="w-100 work" href="work4.html">Kishima Broker</a>
             </div>
-        </section>
-        <section class="bc_der_w">
-            <div class="bcd_int_sizq"></div>
-            <div class="bcd_int_sder"></div>
-            <div class="bcd_int_cizq"></div>
-            <div class="bcd_int_ccen">
-                <!-- Colocar previews Trabajo 1-->
-                <img src="" alt="Proyecto 1">
+            <div class="col-12 col-md-8 d-inline-flex flex-column p-5 cont_over">
+                <div class="b_titulo_w">noes.arte</div>
+                <p class="det_w pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor consequat mauris, vitae mollis libero ultricies eget. Aliquam efficitur ut sapien sit amet elementum. Vestibulum in est leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum porta ligula eget est aliquet scelerisque. Cras vulputate massa nec orci aliquam, sed consequat urna posuere.</p>
+                <div class="container-fluid p-5">
+                    <div class="row text-center border border-dark border-2">
+                        <div class="col-12 col-sm-6 p-5">
+                            <img class="img-fluid" src="../media/noesarte/pagcompleta_noesarte.png" alt="Pagina completa Noesarte">
+                        </div>
+                        <div class="col">
+                            <div class="row p-5">
+                                <div class="col-12">
+                                    <img class="img-fluid" src="../media/noesarte/cpeqilustrada_noesarte.png" alt="Curso Pequeña Historia del Arte Ilustrada en Noesarte">
+                                </div>
+                            </div>
+                            <div class="row p-5">
+                                <div class="col-12">
+                                    <img class="img-fluid" src="../media/noesarte/chistartista_noesarte.png" alt="Curso Historia de una artista en Noesarte">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <a class="detalle_trabajo" href="work1_detail.html">See work</a>
-            </div>
-            <div class="bcd_int_iizq"></div>
-            <div class="bcd_int_icen"></div>
-            <div class="bcd_int_ider"></div>
-        </section>
     </main>
 </body>
 </html>
