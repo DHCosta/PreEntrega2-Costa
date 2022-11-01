@@ -269,7 +269,7 @@ nav ul li a:focus::after{
 
 .b_titulo_ab{
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .b_cent_ab{
@@ -305,7 +305,7 @@ nav ul li a:focus::after{
 
 .b_sub_titulo_ct{
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -323,15 +323,38 @@ nav ul li a:focus::after{
 }
 
 .formulario,
-.formulario label{
+.formulario div,
+.formulario label {
     background: none;
+}
+
+.form-floating{
+    font-weight: 500 !important;
+}
+
+.inputfont{
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+}
+
+.txarea{
+    height: 100px !important;
+}
+
+.formbtn{
+    background-color: #377581 !important;
+    border-color:  #377581 !important;
+    font-size: 1.5rem !important;
+}
+.formbtn:hover{
+    background-color: #507981 !important;
+    border-color: #507981 !important;
 }
 
 /*--------- gallery.html / works---------*/
 
 .menu_works{
     border-right: solid 10px black;
-
 }
 
 .cont_over{
@@ -347,23 +370,29 @@ nav ul li a:focus::after{
     color: black;
     text-transform: uppercase;
     text-align: end;
+    border-bottom: solid 10px #377581;
 }
 .work:hover{
     font-weight: 400;
     color: black;
 }
-
+.work > .material-symbols-outlined {
+    display: none;
+}
 .work_sel{
-    font-weight: 400;
+    font-weight: 700;
     color: #377581;
 }
 .work_sel:hover{
-    font-weight: 400;
+    font-weight: 700;
     color: #377581;
+}
+.work_sel > .material-symbols-outlined {
+    display: inline;
 }
 
 .b_titulo_w{
-    font-size: 6rem;
+    font-size: 10rem;
     font-weight: 600;
     text-transform: uppercase;
 }
