@@ -53,7 +53,7 @@
     
     <main class="container-fluid">
         <div class="row bc_about_sup">
-            <div class="col-12 col-md-3 d-inline-flex flex-column justify-content-center align-items-center menu_works pe-5">
+            <div id="menu_ppal" class="col-12 col-lg-3 d-inline-flex flex-column justify-content-center align-items-center menu_works pe-5 ps-5 ps-lg-3">
                 <a class="w-100 work work_sel" href="gallery.html">
                     <span class="material-symbols-outlined">east</span>
                     Noes.arte
@@ -71,15 +71,20 @@
                     Kishima Broker
                 </a>
             </div>
-            <div class="col-12 col-md-9 d-inline-flex flex-column p-5 cont_over">
+            <div id="tit_ppal" class="col-12 col-lg-9 d-inline-flex flex-column p-5 cont_over">
+                
+                <button onclick="topFunction()" id="myBtn" title="Go to top">
+                    <span class="material-symbols-outlined top">arrow_upward</span>
+                </button>
+
                 <div class="b_titulo_w fw-bold">noes.arte</div>
                 <p class="det_w pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor consequat mauris, vitae mollis libero ultricies eget. Aliquam efficitur ut sapien sit amet elementum. Vestibulum in est leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum porta ligula eget est aliquet scelerisque. Cras vulputate massa nec orci aliquam, sed consequat urna posuere.</p>
                 <div class="container-fluid p-5">
                     <div class="row text-center border border-dark border-2">
-                        <div class="col-12 col-sm-6 p-5">
+                        <div class="col-12 col-md-6 p-5">
                             <img class="img-fluid fadeIn2s" src="../media/noesarte/pagcompleta_noesarte.png" alt="Pagina completa Noesarte">
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-md-6">
                             <div class="row p-5">
                                 <div class="col-12">
                                     <img class="img-fluid fadeIn2s" src="../media/noesarte/cpeqilustrada_noesarte.png" alt="Curso Pequeña Historia del Arte Ilustrada en Noesarte">
@@ -95,7 +100,25 @@
                 </div>
             </div>
         </div>
-
     </main>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 </html>

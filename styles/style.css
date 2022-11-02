@@ -403,6 +403,25 @@ nav ul li a:focus::after{
     font-size: 1.8em;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
 
 
 /*--------- media query ---------*/
@@ -465,5 +484,28 @@ nav ul li a:focus::after{
     }
     .link_about{
         font-size: 1.2rem;
+    }
+
+    .menu_works{
+        border-right: none;
+    }
+    .b_titulo_w{
+        font-size: 8rem;
+    }
+    .cont_over{
+        overflow-y: hidden;
+        max-height: calc(100vh * 10);
+    }
+    .work{
+        font-size: 2rem;
+        margin: 5px 0px;
+        border-bottom: solid 7px #377581;
+    }
+    .work_sel > .material-symbols-outlined {
+        font-size: 1.5rem;
+        display: inline;
+    }
+    .top{
+        background: none;
     }
   }
