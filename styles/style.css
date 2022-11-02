@@ -490,7 +490,7 @@ nav ul li a:focus::after{
         border-right: none;
     }
     .b_titulo_w{
-        font-size: 8rem;
+        font-size: 7rem;
     }
     .cont_over{
         overflow-y: hidden;
